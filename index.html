@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esethu Jonas</title>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <header>
+        <nav class="navigation">
+            <div class="container">
+                <div class="flex-nav">
+                    <div class="brand">
+                        <a href="#home">     
+                            <code>
+                                <span class="firstname">J</span><span class="lastname">onas</span>
+                            </code>
+                        </a>
+                    </div>
+                    <ul class="nav-list">
+                        <li>
+                            <a href="#home">Home</a>
+                        </li>
+                        <li>
+                            <a href="#portfolio">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="hamburger" id="menu-btn">
+                        <div class="hamburger-top"></div>
+                        <div class="hamburger-middle"></div>
+                        <div class="hamburger-bottom"></div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Home -->
+        <section class="section-home" id="home">
+            <br/><br/><br/><br/><br/>
+            <div class="container mt-2">
+                <div class="flex">
+                    <img src="/img/me.png" alt="Esethu Jonas" class="profile-img mb-2">
+                    <p class="greet mb-2 text-center primary-color">Hello</p>
+                    <h2 class="name mb-2 text-center main-text">I'm <span class="primary-color">Esethu Jonas</span></h2>
+                    <div class="about mb-2 text-center">I'm full stack web developer, I am passionate about writing code to create beautiful 
+                        and functional web apps. Languages that I have been exposed to - <span class="primary-color">PHP, Python, Java, JavaScript, HTML5 and CSS3.</span></div>
+                </div>
+            </div>
+
+        </section>
+    <!-- End Home -->
+
+    <!-- Profile -->
+    <section class="section-porfolio" id="portfolio">
+        <br/><br/><br/><br/><br/>
+        <h1 class="text-center mb-1">Portfolio</h1>
+        <div class="line"></div>
+        <div class="container mt-2">
+            <div class="grid-3">
+                <div class="portfolio-cont">
+                   <img src="/img/porfolio-img/trello.jpg" alt="Trello">
+                   <div class="porfolio-text">
+                       <div class="porfolio-details">
+                        <p class="mb-3 text-details">My version of Trello. Tech used HTML5, CSS3, Angular1, Django, Python</p>
+                        <a href="https://github.com/SjayTheGift/Scrumboad_Django-App" target="_blank" class="btn btn-outline">View Site ></a>
+                       </div>
+                    </div>
+                </div>
+                <div class="portfolio-cont">
+                    <img src="/img/porfolio-img/Port-11.jpg" alt="porfolio-im">
+                    <div class="porfolio-text">
+                        <div class="porfolio-details">
+                         <p class="mb-3 text-details">Magnam eaque dignissimos molestiae ratione!</p>
+                         <a href="#" class="btn btn-outline" target="_blank">View Site ></a>
+                        </div>
+                     </div>
+                 </div>
+                 <div class="portfolio-cont">
+                    <img src="/img/porfolio-img/Port-11.jpg" alt="porfolio-im">
+                    <div class="porfolio-text">
+                        <div class="porfolio-details">
+                         <p class="mb-3 text-details">Magnam eaque dignissimos molestiae ratione!</p>
+                         <a href="#" class="btn btn-outline" target="_blank">View Site ></a>
+                        </div>
+                     </div>
+                 </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact -->
+    <section class="section-contact" id="contact">
+        <br/><br/><br/><br/><br/>
+        <h1 class="text-center mb-1">Contact</h1>
+        <div class="line"></div>
+        <div class="container mt-2">
+            <div class="contact">
+                <form action="" class="">
+                    <div class="form-group">
+                        <input type="text" placeholder="Fullname *">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email *">
+                    </div>
+                    <div class="form-group">
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Message *"></textarea> 
+                    </div>
+                    <div class="btn btn-primary">Send Email</div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- End Contact -->
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                    <ul class="social-links">
+                        <li><a href="https://www.facebook.com/siphosethu.jonas.71" target="_blank"  id="social-fb"><i class="fa fa-facebook-square fa-3x social"></i></a></li>
+                        <li><a href="https://twitter.com/sjayTheGift" target="_blank" id="social-tw"><i class="fa fa-twitter-square fa-3x  social"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/siphosethu-jonas-926a6290/" target="_blank" id="social-in"><i class="fa fa-linkedin-square fa-3x social"></i></a></li>
+                        <li><a href="https://github.com/SjayTheGift" target="_blank" id="social-git"><i class="fa fa-github-square fa-3x social"></i></a></li>
+                    </ul>
+
+                    <p class="copyright">
+                        &copy; <span id="year"></span> Esethu Jonas, All Rights Reserved.
+                    </p>
+            </div><!-- .row -->
+        </div><!-- .container -->
+    </footer>
+
+    <!--/ Footer end -->
+
+    <script src="js/script.js"></script>
+</body>
+</html>
