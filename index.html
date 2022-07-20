@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Esethu Jonas</title>
 
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="img/favicon/favicon-32x32.png">
     <!-- Style -->
     <link rel="stylesheet" href="css/style.css">
 
@@ -15,7 +17,7 @@
 </head>
 <body>
     <header>
-        <nav class="navigation">
+        <nav class="navigation" id="mynav">
             <div class="container">
                 <div class="flex-nav">
                     <div class="brand">
@@ -48,10 +50,9 @@
 
     <!-- Home -->
         <section class="section-home" id="home">
-            <br/><br/><br/><br/><br/>
             <div class="container mt-2">
                 <div class="flex">
-                    <img src="/img/me.png" alt="Esethu Jonas" class="profile-img mb-2">
+                    <img src="/img/me_2.jpg" alt="Esethu Jonas" class="profile-img mb-2">
                     <p class="greet mb-2 text-center primary-color">Hello</p>
                     <h2 class="name mb-2 text-center main-text">I'm <span class="primary-color">Esethu Jonas</span></h2>
                     <div class="about mb-2 text-center">I'm full stack web developer, I am passionate about writing code to create beautiful 
@@ -64,38 +65,71 @@
 
     <!-- Profile -->
     <section class="section-porfolio" id="portfolio">
-        <br/><br/><br/><br/><br/>
         <h1 class="text-center mb-1">Portfolio</h1>
         <div class="line"></div>
         <div class="container mt-2">
-            <div class="grid-3">
-                <div class="portfolio-cont">
-                   <img src="/img/porfolio-img/trello.jpg" alt="Trello">
-                   <div class="porfolio-text">
-                       <div class="porfolio-details">
-                        <p class="mb-3 text-details">My version of Trello. Tech used HTML5, CSS3, Angular1, Django, Python</p>
-                        <a href="https://github.com/SjayTheGift/Scrumboad_Django-App" target="_blank" class="btn btn-outline">View Site ></a>
-                       </div>
+            <div class="porfolio-content">
+                <div class="col">
+                    <img src="/img/porfolio-img/trello.jpg" alt="Trello">
+                    <div class="layer">
+                        <div class="porfolio-details">
+                            <p class="mb-3 text-details">My version of Trello. Tech used HTML5, CSS3, Angular1, Django, Python</p>
+                            <a href="https://github.com/SjayTheGift/Scrumboad_Django-App" target="_blank" class="btn btn-outline">View Site ></a>
+                        </div>
                     </div>
                 </div>
-                <div class="portfolio-cont">
-                    <img src="/img/porfolio-img/Port-11.jpg" alt="porfolio-im">
-                    <div class="porfolio-text">
+
+                <div class="col">
+                    <img src="/img/porfolio-img/trello.jpg" alt="Trello">
+                    <div class="layer">
                         <div class="porfolio-details">
-                         <p class="mb-3 text-details">Cv generator, Tech used HTML5, Css3 and JavaScript</p>
-                         <a href="#" class="btn btn-outline" target="_blank">View Site ></a>
+                            <p class="mb-3 text-details">My version of Trello. Tech used HTML5, CSS3, Angular1, Django, Python</p>
+                            <a href="https://github.com/SjayTheGift/Scrumboad_Django-App" target="_blank" class="btn btn-outline">View Site ></a>
                         </div>
-                     </div>
-                 </div>
-                 <div class="portfolio-cont">
-                    <img src="/img/porfolio-img/Port-11.jpg" alt="porfolio-im">
-                    <div class="porfolio-text">
+                    </div>
+                </div>
+
+                <div class="col">
+                    <img src="/img/porfolio-img/trello.jpg" alt="Trello">
+                    <div class="layer">
                         <div class="porfolio-details">
-                         <p class="mb-3 text-details">Magnam eaque dignissimos molestiae ratione!</p>
-                         <a href="#" class="btn btn-outline" target="_blank">View Site ></a>
+                            <p class="mb-3 text-details">My version of Trello. Tech used HTML5, CSS3, Angular1, Django, Python</p>
+                            <a href="https://github.com/SjayTheGift/Scrumboad_Django-App" target="_blank" class="btn btn-outline">View Site ></a>
                         </div>
-                     </div>
-                 </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <img src="/img/porfolio-img/trello.jpg" alt="Trello">
+                    <div class="layer">
+                        <div class="porfolio-details">
+                            <p class="mb-3 text-details">My version of Trello. Tech used HTML5, CSS3, Angular1, Django, Python</p>
+                            <a href="https://github.com/SjayTheGift/Scrumboad_Django-App" target="_blank" class="btn btn-outline">View Site ></a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col">
+                    <img src="/img/porfolio-img/trello.jpg" alt="Trello">
+                    <div class="layer">
+                        <div class="porfolio-details">
+                            <p class="mb-3 text-details">My version of Trello. Tech used HTML5, CSS3, Angular1, Django, Python</p>
+                            <a href="https://github.com/SjayTheGift/Scrumboad_Django-App" target="_blank" class="btn btn-outline">View Site ></a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col">
+                    <img src="/img/porfolio-img/trello.jpg" alt="Trello">
+                    <div class="layer">
+                        <div class="porfolio-details">
+                            <p class="mb-3 text-details">My version of Trello. Tech used HTML5, CSS3, Angular1, Django, Python</p>
+                            <a href="https://github.com/SjayTheGift/Scrumboad_Django-App" target="_blank" class="btn btn-outline">View Site ></a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -103,12 +137,14 @@
 
     <!-- Contact -->
     <section class="section-contact" id="contact">
-        <br/><br/><br/><br/><br/>
         <h1 class="text-center mb-1">Contact</h1>
         <div class="line"></div>
-        <div class="container mt-2">
-            <div class="contact">
-                <form name="contact" method="POST" data-netlify="true">
+        <div class="container mt-1">
+            <div class="contact-container">
+                <form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+                    <div class="form-group hidden">
+                        <input name="bot-field"  placeholder="Don't fill this out if you're human: "/>
+                    </div>
                     <div class="form-group">
                         <input type="text" name="name" placeholder="Fullname *">
                     </div>
@@ -144,7 +180,7 @@
     </footer>
 
     <!--/ Footer end -->
-
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="js/script.js"></script>
 </body>
 </html>
