@@ -7,8 +7,9 @@ const hamburger_top = document.querySelector('.hamburger-top');
 const hamburger_middle = document.querySelector('.hamburger-middle');
 const hamburger_bottom = document.querySelector('.hamburger-bottom'); 
 
+const sections = document.querySelectorAll('section');
 
-
+// Toggle nav hide and show on mobile
 
 function toggleNav(){
     btn.classList.toggle('open');
@@ -23,9 +24,29 @@ a_btn.forEach(a =>{
 });
 
 
+// Add active and remove active on scroll
+const changeLinkState = ()=>{
+    let index = sections.length;
+
+    while (--index && window.scrollY + 50 < sections[index].offsetTop) {}
+
+    a_btn.forEach((link) => link.classList.remove('nav-active'));
+
+    // add the active class if within visible height of the element
+    if (scrollY - sections[index].offsetHeight < sections[index].offsetTop) {
+        a_btn[index].classList.add('nav-active');
+    }
+}
+
+
+
+
 // Scroll Effect Navigation
 window.addEventListener('scroll', ()=>{
     
+    // Call change state function for active button
+    changeLinkState();
+
     if(window.scrollY > 0){
         a_btn.forEach(a =>{
             a.style.color = '#090a1a';

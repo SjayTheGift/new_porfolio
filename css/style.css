@@ -20,6 +20,10 @@ body{
     line-height: 1.5;
 }
 
+h1{
+    font-size: 3rem;
+}
+
 .container{
     max-width: 1140px;
     margin: 0 auto;
@@ -183,7 +187,7 @@ section{
     /* box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px; */
     width: 100%;
     position: fixed;
-    font-weight: 700;
+    font-weight: 400;
     z-index: 9999;
 }
 
@@ -262,6 +266,7 @@ section{
 .nav-active{
     border-bottom: 2px solid var(--primary-color);
     color: var(--primary-color);
+    font-weight: 700;
 }
 
 
@@ -518,12 +523,12 @@ form{
 
     .nav-list li{
         display: block;
-        margin-top: 20px;
-        margin-bottom: 20px;
+        margin-top: 50px;
+        margin-bottom: 50px;
         text-align: center;
         padding: 10px;
         /* border-bottom: #ccc solid 1px; */
-        font-size: 16px;
+        font-size: 2.5rem;
     }
 
     .nav-list li:last-child  {
