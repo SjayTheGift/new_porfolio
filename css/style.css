@@ -143,6 +143,12 @@ li{
     overflow: hidden;
 }
 
+.error{
+    padding: 10px;
+    background-color: red;
+    color: #fff;
+}
+
 
 section{
     padding: 120px 0;
@@ -536,10 +542,6 @@ form{
     }
     .nav-list li a{
         color: var(--secondary-color) !important;
-    }
-    
-    .grid-3{
-        grid-template-columns: repeat(2 ,1fr);
     }
 }
 

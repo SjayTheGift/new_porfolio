@@ -91,3 +91,24 @@ let year = document.querySelector('#year');
 year.append(date.getFullYear())
 
 
+// Validate Form
+
+const send_email = document.querySelector('#send_email');
+const fname = document.querySelector('#name');
+const email = document.querySelector('#email');
+const message = document.querySelector('#message');
+const form = document.querySelector('form');
+
+send_email.addEventListener('click', ()=>{
+    const error_message = document.createElement('p')
+    error_message.classList.add('error');
+
+    error_message.innerText = 'All fields are required';
+
+    if(fname || email  || message === ''){
+       form.insertBefore(error_message, fname.parentNode);
+    }
+    setInterval( () =>{
+        error_message.style.display = 'none'
+    },2000)
+})
