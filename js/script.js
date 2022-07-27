@@ -99,18 +99,30 @@ const email = document.querySelector('#email');
 const message = document.querySelector('#message');
 const form = document.querySelector('form');
 
+const validateEmail = (email) => {
+    return String(email)
+      .toLowerCase()
+      .match(
+        /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+      );
+  };
+  
+
 send_email.addEventListener('click', (e)=>{
     e.preventDefault();
 
     const error_message = document.createElement('p')
     error_message.classList.add('error');
-
-    console.log(fname.value)
     
-    error_message.innerText = 'All fields are required';
+    
 
-    if(fname.valaue || email.value  || message.value === ''){
+    if(fname.valaue === '' || email.value === ''  || message.value === ''){
+       error_message.innerText = 'All fields are required';
        form.insertBefore(error_message, fname.parentNode);
+    }
+    else if(!validateEmail(email.value)){
+        error_message.innerText = 'Please enter a valid email';
+        form.insertBefore(error_message, fname.parentNode);
     }
     setInterval( () =>{
         error_message.style.display = 'none'
