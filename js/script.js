@@ -108,14 +108,11 @@ const validateEmail = (email) => {
   };
   
 
-send_email.addEventListener('click', (e)=>{
-    e.preventDefault();
-
+send_email.addEventListener('click', ()=>{
+    
     const error_message = document.createElement('p')
     error_message.classList.add('error');
     
-    
-
     if(fname.valaue === '' || email.value === ''  || message.value === ''){
        error_message.innerText = 'All fields are required';
        form.insertBefore(error_message, fname.parentNode);
