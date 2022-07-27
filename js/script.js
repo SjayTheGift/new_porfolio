@@ -99,16 +99,21 @@ const email = document.querySelector('#email');
 const message = document.querySelector('#message');
 const form = document.querySelector('form');
 
-send_email.addEventListener('click', ()=>{
+send_email.addEventListener('click', (e)=>{
+    e.preventDefault();
+
     const error_message = document.createElement('p')
     error_message.classList.add('error');
 
+    console.log(fname.value)
+    
     error_message.innerText = 'All fields are required';
 
-    if(fname || email  || message === ''){
+    if(fname.valaue || email.value  || message.value === ''){
        form.insertBefore(error_message, fname.parentNode);
     }
     setInterval( () =>{
         error_message.style.display = 'none'
-    },2000)
+        error_message.remove()
+    },3000)
 })

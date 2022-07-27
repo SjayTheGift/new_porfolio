@@ -400,20 +400,22 @@ section{
 
 /* Form */
 .form-group{
-    display: flex;
-    margin: 20px 0;
+    margin: 20px 0 40px;
 }
 
 input, textarea{
     width: 100%;
-    padding: 10px;
+    /* padding: 10px; */
     border-radius: none;
     border: none;
     border-bottom: 1px solid var(--secondary-color);
+    transition: ease-in-out .8s;
+    outline: none;
+    border-bottom: 2px solid var(--secondary-color);
 }
 
+
 input:focus, textarea:focus{
-    outline: none;
     border-bottom: 2px solid var(--primary-color);
 }
 
@@ -426,6 +428,7 @@ form{
     width: 80%;
     margin: 0 auto;
 }
+
 
 
 /*
