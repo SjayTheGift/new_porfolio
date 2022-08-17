@@ -341,15 +341,22 @@ section{
     position: relative;
 }
 
-.col img{
-    max-width: 100%;
-    width: 550px;
+.image {
+    display: block;
+    width: 100%;
     height: auto;
-    object-fit: cover;
     border-radius: 12px;
 }
 
-.layer{
+/* .col img{
+    max-width: 100%;
+    width: 550px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 12px;
+} */
+
+/* .layer{
     background-color: transparent;
     height: 100%;
     width: 100%;
@@ -360,30 +367,43 @@ section{
     transition: all .40s;
     opacity: 0;
     transform: translate(-10%);
+} */
+
+
+.layer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #0d0f26;
+    opacity: 1;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+    border-radius: 12px;
+}
+
+.col:hover .layer {
+    width: 100%;
 }
 
 .porfolio-details{
     position: absolute;
 	width: 100%;
 	top: 50%;
-	left: 0;
+	left: 50%;
 	text-align: center;
-	-webkit-transform: translate(0%, -50%);
-	   -moz-transform: translate(0%, -50%);
-		-ms-transform: translate(0%, -50%);
-		 -o-transform: translate(0%, -50%);
-			transform: translate(0%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 	padding: 0 15px;
-    transition: all 1s ease;
     color: #fff;
+    white-space: wrap;
 }
 
 
-.layer:hover{
-    background-color: #0d0f26;
-    opacity: 1;
-    transform: translateX(0);
-}
+
 
 /*
 =================================================
@@ -544,6 +564,10 @@ form{
     .nav-list li a{
         color: var(--secondary-color) !important;
     }
+    .col{
+        max-width: 80%;
+        margin: 0 auto;
+    }
 }
 
 @media(max-width:620px){
@@ -558,5 +582,24 @@ form{
     } */
     .flex{
         width: 80%;
+    }
+}
+
+@media(max-width:378px){
+    .greet{
+        font-size: 1rem;
+    }
+    .main-text{
+        font-size: 1.5rem;
+    }
+    .about{
+        font-size: 12px;
+    }
+    .greet::after, .greet::before{
+        font-size: 18px;
+    }
+    .col{
+        max-width: 70%;
+        margin: 0 auto;
     }
 }
