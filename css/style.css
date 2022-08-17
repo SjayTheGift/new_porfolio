@@ -598,8 +598,7 @@ form{
     .greet::after, .greet::before{
         font-size: 18px;
     }
-    .col{
-        max-width: 70%;
-        margin: 0 auto;
+    .profile-img{
+        height: 150px;
     }
 }
