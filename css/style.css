@@ -598,10 +598,8 @@ form{
     .greet::after, .greet::before{
         font-size: 18px;
     }
-    .btn {
-        padding: 5px 14px;
-    }
-    .profile-img {
-        height: 150px;
+    .col{
+        max-width: 70%;
+        margin: 0 auto;
     }
 }
